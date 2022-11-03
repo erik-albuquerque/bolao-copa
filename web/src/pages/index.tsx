@@ -5,7 +5,7 @@ type HomeProps = {
 };
 
 export default function Home(props: HomeProps) {
-  return <h1>Home {props.count}</h1>;
+  return <h1 className="text-violet-500">Home {props.count}</h1>;
 }
 
 export const getServerSideProps: GetServerSideProps = async () => {
