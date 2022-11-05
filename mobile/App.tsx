@@ -9,6 +9,7 @@ import {
 import { SignIn } from "./src/screens/SignIn";
 import { New } from "./src/screens/New";
 import { Find } from "./src/screens/Find";
+import { Pools } from "./src/screens/Pools";
 import { Loading } from "./src/components/Loading";
 import { AuthContextProvider } from "./src/contexts/AuthContext";
 
@@ -26,7 +27,7 @@ export default function App() {
           backgroundColor="transparent"
           translucent
         />
-        {fontsLoaded ? <Find /> : <Loading />}
+        {fontsLoaded ? <Pools /> : <Loading />}
       </AuthContextProvider>
     </NativeBaseProvider>
   );
